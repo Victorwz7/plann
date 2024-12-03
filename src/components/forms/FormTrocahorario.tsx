@@ -1,5 +1,5 @@
 
-export function ScheduleChangeForm() {
+export function FormTrocahorario() {
   return (
     <form className="space-y-6">
       <h2 className="text-2xl font-bold mb-6">Formulário de Troca de Horário</h2>
@@ -12,6 +12,16 @@ export function ScheduleChangeForm() {
             className="w-full p-2 border rounded-md"
             required
           />
+        </div>
+
+        <div>
+          <label className="block text-sm font-medium mb-1">Area</label>
+          <select className="w-full p-2 border rounded-md" required>
+            <option value="">Selecione...</option>
+            <option value="Arcelor">Arcelor</option>
+            <option value="Norte Energia">Norte Energia</option>
+            <option value="Hersheys">Hersheys</option>
+          </select>
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-4">

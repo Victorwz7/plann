@@ -43,13 +43,40 @@ export function AdmissaoForm() {
         </div>
 
         <div>
-          <label className="block text-sm font-medium mb-1">Departamento</label>
+          <label className="block text-sm font-medium mb-1">Area</label>
           <select className="w-full p-2 border rounded-md" required>
             <option value="">Selecione...</option>
-            <option value="ti">TI</option>
-            <option value="rh">RH</option>
-            <option value="financeiro">Financeiro</option>
+            <option value="Arcelor">Arcelor</option>
+            <option value="Norte Energia">Norte Energia</option>
+            <option value="Hersheys">Hersheys</option>
           </select>
+        </div>
+        <div>
+          <label className="block text-sm font-medium mb-1">Supervisor</label>
+          <select className="w-full p-2 border rounded-md" required>
+            <option value="">Selecione...</option>
+            <option value="Lais">Lais</option>
+            <option value="Lais">Lais</option>
+            <option value="Lais">Lais</option>
+          </select>
+        </div>
+        <div>
+          <label className="block text-sm font-medium mb-1">Coordenador</label>
+          <select className="w-full p-2 border rounded-md" required>
+            <option value="">Selecione...</option>
+            <option value="Elaine">Elaine neves</option>
+            <option value="Lilian">Lilian</option>
+            <option value="Cristiane">Cristiane</option>
+          </select>
+        </div>
+
+        <div>
+          <label className="block text-sm font-medium mb-1">Pin</label>
+          <input
+            type="number"
+            className="w-full p-2 border rounded-md"
+            required
+          />
         </div>
 
         <div>

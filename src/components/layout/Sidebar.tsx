@@ -7,11 +7,11 @@ interface FormOption {
 }
 
 const formOptions: FormOption[] = [
-  { id: 'admissions', title: 'Admissões' },
-  { id: 'terminations', title: 'Desligamentos' },
-  { id: 'schedule-change', title: 'Troca de Horário' },
-  { id: 'activity-adjustment', title: 'Ajuste de Atividades' },
-  { id: 'time-off', title: 'Solicitação de Folga' },
+  { id: 'admissao', title: 'Admissões' },
+  { id: 'Desligamentos', title: 'Desligamentos' },
+  { id: 'Troca-Horario', title: 'Troca de Horário' },
+  { id: 'ajuste-atividade', title: 'Ajuste de Atividades' },
+  { id: 'solicitacao-folga', title: 'Solicitação de Folga' },
 ];
 
 interface SidebarProps {

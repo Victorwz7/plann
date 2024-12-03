@@ -15,28 +15,40 @@ export function AjusteAtividade() {
         </div>
 
         <div>
-          <label className="block text-sm font-medium mb-1">Cargo Atual</label>
+          <label className="block text-sm font-medium mb-1">Area</label>
+          <select className="w-full p-2 border rounded-md" required>
+            <option value="">Selecione...</option>
+            <option value="Arcelor">Arcelor</option>
+            <option value="Norte Energia">Norte Energia</option>
+            <option value="Hersheys">Hersheys</option>
+          </select>
+        </div>
+
+        
+
+        <div>
+          <label className="block text-sm font-medium mb-1">Horario Atual das pausas</label>
+          <textarea
+            className="w-full p-2 border rounded-md h-32"
+            required
+          ></textarea>
+        </div>
+
+        <div>
+          <label className="block text-sm font-medium mb-1">Horario novo</label>
+          <textarea
+            className="w-full p-2 border rounded-md h-32"
+            required
+          ></textarea>
+        </div>
+
+        <div>
+          <label className="block text-sm font-medium mb-1">Data de Início para alterar</label>
           <input
-            type="text"
+            type="date"
             className="w-full p-2 border rounded-md"
             required
           />
-        </div>
-
-        <div>
-          <label className="block text-sm font-medium mb-1">Atividades Atuais</label>
-          <textarea
-            className="w-full p-2 border rounded-md h-32"
-            required
-          ></textarea>
-        </div>
-
-        <div>
-          <label className="block text-sm font-medium mb-1">Novas Atividades Propostas</label>
-          <textarea
-            className="w-full p-2 border rounded-md h-32"
-            required
-          ></textarea>
         </div>
 
         <div>

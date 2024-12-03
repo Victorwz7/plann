@@ -2,7 +2,7 @@ import { useState } from 'react';
 import { Sidebar } from './components/layout/Sidebar';
 import { AdmissaoForm } from './components/forms/FormAdmissao';
 import { FormDesligamentos } from './components/forms/FormDesligamentos';
-import { ScheduleChangeForm } from './components/forms/FormTrocahorario';
+import { FormTrocahorario } from './components/forms/FormTrocahorario';
 import { AjusteAtividade } from './components/forms/FormAjusta-atividade';
 import { SolicitaçaoFolga } from './components/forms/Form-Folga';
 
@@ -11,15 +11,15 @@ function App() {
 
   const renderForm = () => {
     switch (selectedForm) {
-      case 'admissions':
+      case 'admissao':
         return <AdmissaoForm />;
-      case 'terminations':
+      case 'Desligamentos':
         return <FormDesligamentos />;
-      case 'schedule-change':
-        return <ScheduleChangeForm />;
-      case 'activity-adjustment':
+      case 'Troca-Horario':
+        return <FormTrocahorario />;
+      case 'ajuste-atividade':
         return <AjusteAtividade />;
-      case 'time-off':
+      case 'solicitacao-folga':
         return <SolicitaçaoFolga />;
       default:
         return (

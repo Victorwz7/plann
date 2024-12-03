@@ -13,11 +13,21 @@ export function FormDesligamentos() {
           />
         </div>
 
+        <div>
+          <label className="block text-sm font-medium mb-1">Area</label>
+          <select className="w-full p-2 border rounded-md" required>
+            <option value="">Selecione...</option>
+            <option value="Arcelor">Arcelor</option>
+            <option value="Norte Energia">Norte Energia</option>
+            <option value="Hersheys">Hersheys</option>
+          </select>
+        </div>
+
         <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
           <div>
-            <label className="block text-sm font-medium mb-1">Matrícula</label>
+            <label className="block text-sm font-medium mb-1">Pin</label>
             <input
-              type="text"
+              type="number"
               className="w-full p-2 border rounded-md"
               required
             />
